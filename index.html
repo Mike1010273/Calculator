@@ -16,6 +16,10 @@
     <input type= "number" id="num6" placeholder= "enter number">
     <button onclick= "divide()"> / </button>
     <h3 id="amount"> </h3>
+     <input type= "number" id="num7" placeholder= "enter number">
+    <input type= "number" id="num8" placeholder= "enter number">
+    <button onclick= "subtract()"> - </button>
+    <h3 id="values"> </h3>
     
   <script> 
    function add(){
@@ -36,6 +40,12 @@
       let number6= Number(document.getElementById("num6").value);
       let results= number5 / number6;
       document.getElementById("amount").innerHTML= results;
+    };
+     function subtract(){
+      let number5= Number(document.getElementById("num7").value);
+      let number6= Number(document.getElementById("num8").value);
+      let results= number7 - number8;
+      document.getElementById("values").innerHTML= results;
     };
   </script>
      </body>
